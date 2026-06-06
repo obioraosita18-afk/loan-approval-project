@@ -11,7 +11,7 @@
 |---|---|
 | ** Live API** | [https://loan-approval-api-0clc.onrender.com](https://loan-approval-api-0clc.onrender.com) |
 | ** Interactive API Docs (Swagger UI)** | [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs) |
-| **📓 Full Notebook Viewer** | [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb) |
+| ** Full Notebook Viewer** | [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb) |
 
 >  The API is hosted on a free instance — it may take **30–50 seconds** to wake up on first request.
 
