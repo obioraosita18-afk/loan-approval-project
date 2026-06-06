@@ -1,80 +1,100 @@
-# Loan Approval Prediction — Machine Learning Project
+# 🏦 Loan Approval Prediction — Machine Learning Project
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![ML](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20XGBoost-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![API](https://img.shields.io/badge/API-Live-green)
 
-##  Project Overview
+## 🚀 Live Demo
 
-An end-to-end machine learning project that predicts whether a loan application will be approved or rejected based on applicant financial and demographic information. The project follows an industry-standard ML workflow from data preprocessing to model deployment preparation.
+| Resource | Link |
+|---|---|
+| **🔗 Live API** | [https://loan-approval-api-0clc.onrender.com](https://loan-approval-api-0clc.onrender.com) |
+| **📋 Interactive API Docs (Swagger UI)** | [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs) |
+| **📓 Full Notebook Viewer** | [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb) |
 
----
-
-##  Project Objectives
-
-- Develop a classification model to predict loan approval status
-- Perform data cleaning, preprocessing, and feature engineering
-- Conduct exploratory data analysis (EDA) to uncover patterns
-- Train and compare multiple ML algorithms
-- Evaluate models using comprehensive metrics
-- Identify key features influencing loan decisions
-- Prepare a trained model for deployment via FastAPI
+> ⚠️ The API is hosted on a free instance — it may take **30–50 seconds** to wake up on first request.
 
 ---
 
-##  Project Structure
+## 📌 Project Overview
 
+An end-to-end machine learning project that predicts whether a loan application will be **Approved ✅** or **Rejected ❌** based on applicant financial and demographic information.
+
+---
+
+## 🧪 Test the API
+
+### Option 1 — Swagger UI (No coding needed)
+1. Visit → [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs)
+2. Click **POST /predict** → **Try it out** → **Execute**
+3. See the prediction result instantly!
+
+### Option 2 — Sample Request (curl)
+```bash
+curl -X POST "https://loan-approval-api-0clc.onrender.com/predict" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Gender": "Male",
+    "Married": "Yes",
+    "Dependents": "1",
+    "Education": "Graduate",
+    "Self_Employed": "No",
+    "ApplicantIncome": 5000,
+    "CoapplicantIncome": 1500,
+    "LoanAmount": 120,
+    "Loan_Amount_Term": 360,
+    "Credit_History": 1.0,
+    "Property_Area": "Urban"
+  }'
 ```
-loan-approval-project/
-├── notebooks/
-│   └── Loan_Approval.ipynb       # Main analysis notebook
-├── data/
-│   └── (place your dataset here)
-├── models/
-│   └── (saved .pkl model files)
-├── src/
-│   └── (source scripts)
-├── requirements.txt
-└── README.md
+
+### Sample Response
+```json
+{
+  "prediction": "Approved",
+  "prediction_label": 1,
+  "probability_approved": 0.87,
+  "probability_rejected": 0.13
+}
 ```
 
 ---
 
-##  Dataset Features
+## 📊 Dataset Features
 
 | Feature | Description |
 |---|---|
 | Gender | Applicant gender |
 | Married | Marital status |
 | Dependents | Number of dependents |
-| Education | Graduate or not |
+| Education | Graduate or Not Graduate |
 | Self_Employed | Employment status |
-| ApplicantIncome | Applicant salary |
-| CoapplicantIncome | Co-applicant salary |
-| LoanAmount | Requested loan amount |
-| Loan_Amount_Term | Loan repayment duration |
-| Credit_History | Past credit behaviour |
+| ApplicantIncome | Monthly applicant income |
+| CoapplicantIncome | Monthly co-applicant income |
+| LoanAmount | Requested loan amount (thousands) |
+| Loan_Amount_Term | Repayment duration (months) |
+| Credit_History | Past credit behaviour (1=good, 0=bad) |
 | Property_Area | Urban / Semiurban / Rural |
-| **Loan_Status** | **Target variable** |
+| **Loan_Status** | **Target variable (Y/N)** |
 
 ---
 
-##  ML Pipeline
+## 🔧 ML Pipeline
 
-1. **Data Loading & Exploration** — shape, dtypes, missing values, duplicates
-2. **EDA** — class distribution, income distribution, credit history analysis, correlation heatmap
+1. **Data Loading & Exploration** — shape, dtypes, missing values
+2. **EDA** — class distribution, income distribution, correlation heatmap
 3. **Data Cleaning** — mode imputation for categorical, median for numerical
 4. **Encoding** — Label Encoding for all categorical variables
-5. **Outlier Handling** — log transformation on ApplicantIncome and LoanAmount
-6. **Feature Engineering** — Total_Income, Total_Income_Log
-7. **Model Training** — Logistic Regression, Decision Tree, Random Forest, XGBoost
-8. **Evaluation** — Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix
-9. **Feature Importance** — Random Forest feature importances
-10. **Model Saving** — joblib export of model and scaler
+5. **Feature Engineering** — Log transforms, Total_Income
+6. **Model Training** — Logistic Regression, Decision Tree, Random Forest, XGBoost
+7. **Evaluation** — Accuracy, Precision, Recall, F1-Score, ROC-AUC
+8. **Model Saving** — joblib export
+9. **API Deployment** — FastAPI on Render
 
 ---
 
-##  Models Compared
+## 🤖 Models Compared
 
 | Model | Notes |
 |---|---|
@@ -83,31 +103,34 @@ loan-approval-project/
 | Random Forest | Ensemble — best overall performance |
 | XGBoost | Gradient boosting — strong competitor |
 
->  **Random Forest / XGBoost** selected as final production candidate based on ROC-AUC and F1-Score.
+---
+
+## 📁 Project Structure
+
+```
+loan-approval-project/
+├── notebooks/
+│   └── Loan_Approval.ipynb
+├── data/
+├── models/
+├── src/
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-##  Deployment
-
-A **FastAPI** prediction endpoint is planned to serve real-time loan approval predictions using the saved `loan_approval_model.pkl` and `scaler.pkl`.
-
----
-
-##  View Full Notebook
-
- [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb)
-
----
-
-##  Requirements
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/obioraosita18-afk/loan-approval-project.git
+cd loan-approval-project
 pip install -r requirements.txt
 ```
 
 ---
 
-##  Author
+## 📬 Author
 
 **Obiora Osita**
 GitHub: [@obioraosita18-afk](https://github.com/obioraosita18-afk)
