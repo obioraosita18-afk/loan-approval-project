@@ -1,16 +1,16 @@
-# 🏦 Loan Approval Prediction — Machine Learning Project
+# Loan Approval Prediction — Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![ML](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20XGBoost-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-## 📌 Project Overview
+##  Project Overview
 
 An end-to-end machine learning project that predicts whether a loan application will be approved or rejected based on applicant financial and demographic information. The project follows an industry-standard ML workflow from data preprocessing to model deployment preparation.
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Develop a classification model to predict loan approval status
 - Perform data cleaning, preprocessing, and feature engineering
@@ -22,7 +22,7 @@ An end-to-end machine learning project that predicts whether a loan application 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 loan-approval-project/
@@ -40,7 +40,7 @@ loan-approval-project/
 
 ---
 
-## 📊 Dataset Features
+##  Dataset Features
 
 | Feature | Description |
 |---|---|
@@ -59,7 +59,7 @@ loan-approval-project/
 
 ---
 
-## 🔧 ML Pipeline
+##  ML Pipeline
 
 1. **Data Loading & Exploration** — shape, dtypes, missing values, duplicates
 2. **EDA** — class distribution, income distribution, credit history analysis, correlation heatmap
@@ -74,7 +74,7 @@ loan-approval-project/
 
 ---
 
-## 🤖 Models Compared
+##  Models Compared
 
 | Model | Notes |
 |---|---|
@@ -83,23 +83,23 @@ loan-approval-project/
 | Random Forest | Ensemble — best overall performance |
 | XGBoost | Gradient boosting — strong competitor |
 
-> ✅ **Random Forest / XGBoost** selected as final production candidate based on ROC-AUC and F1-Score.
+>  **Random Forest / XGBoost** selected as final production candidate based on ROC-AUC and F1-Score.
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 A **FastAPI** prediction endpoint is planned to serve real-time loan approval predictions using the saved `loan_approval_model.pkl` and `scaler.pkl`.
 
 ---
 
-## 📓 View Full Notebook
+##  View Full Notebook
 
-👉 [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb)
+ [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb)
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📬 Author
+##  Author
 
 **Obiora Osita**
 GitHub: [@obioraosita18-afk](https://github.com/obioraosita18-afk)
