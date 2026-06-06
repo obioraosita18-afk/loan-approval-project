@@ -1,29 +1,29 @@
-# 🏦 Loan Approval Prediction — Machine Learning Project
+#  Loan Approval Prediction — Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![ML](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20XGBoost-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![API](https://img.shields.io/badge/API-Live-green)
 
-## 🚀 Live Demo
+##  Live Demo
 
 | Resource | Link |
 |---|---|
 | **🔗 Live API** | [https://loan-approval-api-0clc.onrender.com](https://loan-approval-api-0clc.onrender.com) |
-| **📋 Interactive API Docs (Swagger UI)** | [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs) |
+| ** Interactive API Docs (Swagger UI)** | [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs) |
 | **📓 Full Notebook Viewer** | [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb) |
 
-> ⚠️ The API is hosted on a free instance — it may take **30–50 seconds** to wake up on first request.
+>  The API is hosted on a free instance — it may take **30–50 seconds** to wake up on first request.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 An end-to-end machine learning project that predicts whether a loan application will be **Approved ✅** or **Rejected ❌** based on applicant financial and demographic information.
 
 ---
 
-## 🧪 Test the API
+##  Test the API
 
 ### Option 1 — Swagger UI (No coding needed)
 1. Visit → [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs)
@@ -61,7 +61,7 @@ curl -X POST "https://loan-approval-api-0clc.onrender.com/predict" \
 
 ---
 
-## 📊 Dataset Features
+##  Dataset Features
 
 | Feature | Description |
 |---|---|
@@ -94,7 +94,7 @@ curl -X POST "https://loan-approval-api-0clc.onrender.com/predict" \
 
 ---
 
-## 🤖 Models Compared
+##  Models Compared
 
 | Model | Notes |
 |---|---|
@@ -105,7 +105,7 @@ curl -X POST "https://loan-approval-api-0clc.onrender.com/predict" \
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 loan-approval-project/
@@ -120,7 +120,7 @@ loan-approval-project/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/obioraosita18-afk/loan-approval-project.git
@@ -130,7 +130,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📬 Author
+##  Author
 
 **Obiora Osita**
 GitHub: [@obioraosita18-afk](https://github.com/obioraosita18-afk)
