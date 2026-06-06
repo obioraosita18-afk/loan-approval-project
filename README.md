@@ -9,7 +9,7 @@
 
 | Resource | Link |
 |---|---|
-| **🔗 Live API** | [https://loan-approval-api-0clc.onrender.com](https://loan-approval-api-0clc.onrender.com) |
+| ** Live API** | [https://loan-approval-api-0clc.onrender.com](https://loan-approval-api-0clc.onrender.com) |
 | ** Interactive API Docs (Swagger UI)** | [https://loan-approval-api-0clc.onrender.com/docs](https://loan-approval-api-0clc.onrender.com/docs) |
 | **📓 Full Notebook Viewer** | [View on nbviewer](https://nbviewer.org/github/obioraosita18-afk/loan-approval-project/blob/main/notebooks/Loan_Approval.ipynb) |
 
