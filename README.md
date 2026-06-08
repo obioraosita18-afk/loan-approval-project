@@ -19,7 +19,7 @@
 
 ##  Project Overview
 
-An end-to-end machine learning project that predicts whether a loan application will be **Approved ✅** or **Rejected ❌** based on applicant financial and demographic information.
+An end-to-end machine learning project that predicts whether a loan application will be **Approved ** or **Rejected ** based on applicant financial and demographic information.
 
 ---
 
